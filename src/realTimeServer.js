@@ -4,5 +4,11 @@ module.exports = (httpServer) => {
 
     io.on("connection", socket => {
         console.log(`sokcet id conectado ${socket.id}`);
+        socket.on("message", message => {
+            io.emit("message", {
+                user: "jorgito",
+                message
+            });
+        })
     })
 }

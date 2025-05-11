@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
     <title>App Chat realTime</title>
 </head>
 <body>
     <header>
         <h1>Chat</h1>
     </header>
+
+    <main>
+        <div class="all-messages">
+            <!-- 
+            Aqui van a ir apareciendo los mensajes
+            -->
+        </div>
+
+        <div class="send-message">
+            <input type="text" id="message">
+            <button type="button" id="send-message" class="btn secondary">Enviar</button>
+        </div>
+    </main>
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/script.js"></script>
 </body>
